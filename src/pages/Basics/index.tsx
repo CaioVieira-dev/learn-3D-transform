@@ -1,6 +1,6 @@
 import { Panel, Scene } from './styles'
 
-export function Home() {
+export function Basics() {
     return (
         <Scene>
             <Panel></Panel>
