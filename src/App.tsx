@@ -5,6 +5,7 @@ import { Basics } from './pages/Basics'
 import { FunctionsOverview } from './pages/FunctionsOverview'
 import { FlipCard } from './pages/FlipCard'
 import { CubeSpin } from './pages/CubeSpin'
+import { BoxSpin } from './pages/BoxSpin'
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/functions" component={FunctionsOverview} />
           <Route exact path="/animation/flip-card" component={FlipCard} />
           <Route exact path="/animation/cube-spin" component={CubeSpin} />
+          <Route exact path="/animation/box-spin" component={BoxSpin} />
         </Switch>
       </BrowserRouter>
     </div>
