@@ -18,8 +18,8 @@ to a parent component, this way you will have only one perspective.
 
 It's possible to use 3D transforms without perspective, however
 without perspective, parallel planes are orthogonal and have no
-vanishing point. For example if you apply rotateY(45deg) to a square,
-it will stretch the square and make it a rectangular shape.
+vanishing point. For example, if you apply rotateY(45deg) to a square,
+this transform will stretch the square and make it a rectangular shape.
 
 "By default, the vanishing point for a 3D space is positioned at the center. 
 You can change the position of the vanishing point with perspective-origin property."
