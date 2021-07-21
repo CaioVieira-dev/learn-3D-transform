@@ -46,7 +46,7 @@ display: flex;
 flex-direction: column;
 
 position:relative;
-transition:0.5s;
+transition: top 0.6s cubic-bezier(0.57, 0.22, 0.3, 0.98);
 ${props => configTop(props.childAmount)};
 .visible&{ 
    top:0;
