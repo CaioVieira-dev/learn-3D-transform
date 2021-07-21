@@ -1,18 +1,48 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
+max-width: 420px;
+display: flex;
+flex-direction:column;
+align-items: center;
+gap:30px;
+padding:16px 0;
+`
+
+export const Text = styled.p`
+color:white;
+font-size: 20px;
+line-height:1.5em;
+`
+export const Example = styled.p`
+color:white;
+font-size: 16px;
+border-radius:16px;
+padding:16px;
+background-color:hsl(252,20%,60%);
+line-height: 2em;
+`
+export const Title = styled.h2`
+color:white;
+margin-top: 750px;
+
+`
+
+export const Grid = styled.div`
+
 max-width: 420px;
 
 width:100%;
-display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr ; 
-  gap: 30px 30px; 
 
-@media(max-width:420px){
-margin-top: 230px;
-}
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr ; 
+    gap: 30px 30px; 
+
 `
+
 /** 
  3D transform functions
 
