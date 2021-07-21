@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-max-width: 500px;
+max-width: 420px;
+
 width:100%;
 display: grid; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr 1fr ; 
   gap: 30px 30px; 
+
+@media(max-width:420px){
+margin-top: 230px;
+}
 `
 /** 
  3D transform functions
@@ -83,5 +88,12 @@ border: 5px solid black;
 font-size: 24px;
 
 background-color: ${props => props.bgColor};
-transform: ${props => applyTransform(props.transform, props.inverted)}
+transform: ${props => applyTransform(props.transform, props.inverted)};
+@media(max-width:420px){
+    width: 160px;
+height: 160px;
+line-height: 160px;
+font-size: 16px;
+
+}
 `
