@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
+import { useNav } from '../../hooks/useNav';
 import { Panel, Scene, Container } from './styles'
 
 export function FunctionsOverview() {
+    const { changePageName } = useNav();
+
+    useEffect(() => { changePageName('Functions effects') }, [changePageName])
 
     return (
         <Container>

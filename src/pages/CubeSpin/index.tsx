@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
+import { useNav } from '../../hooks/useNav';
 import { Cube, Scene, CubeFace } from './styles'
 
 export function CubeSpin() {
+    const { changePageName } = useNav();
+
+    useEffect(() => { changePageName('Efeito: Cube Spin') }, [changePageName])
     return (
         <Scene>
             <Cube>

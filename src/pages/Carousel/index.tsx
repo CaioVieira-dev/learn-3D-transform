@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
+import { useNav } from '../../hooks/useNav';
 import { Scene, CarouselContainer, Cell } from './styles'
 
 export function Carousel() {
+    const { changePageName } = useNav();
+
+    useEffect(() => { changePageName('Efeito: Carousel') }, [changePageName])
     return (
         <Scene>
             <CarouselContainer>

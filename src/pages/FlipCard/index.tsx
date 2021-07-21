@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
+import { useNav } from '../../hooks/useNav';
 import { Scene, Card, CardFace } from './styles'
 
 export function FlipCard() {
+    const { changePageName } = useNav();
 
+    useEffect(() => { changePageName('Efeito: Flip Card') }, [changePageName])
     return (
         <Scene>
             <Card>
