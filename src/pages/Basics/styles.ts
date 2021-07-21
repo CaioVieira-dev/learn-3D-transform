@@ -31,6 +31,7 @@ Font: https://codepen.io/medienmarmelade/pen/xxbmGqL
 */
 
 export const Scene = styled.div`
+margin:30px 0;
 perspective: 400px;
 `
 export const Panel = styled.div`
@@ -38,4 +39,22 @@ width: 200px;
 height: 200px;
 background-color: purple;
 transform: rotateY(60deg);
+`
+
+export const Container = styled.div`
+max-width: 420px;
+display: flex;
+flex-direction:column;
+align-items: center;
+gap:30px;
+`
+
+export const Text = styled.p`
+color:white;
+font-size: 20px;
+line-height:1.5em;
+`
+export const Title = styled.h2`
+color:white;
+
 `
