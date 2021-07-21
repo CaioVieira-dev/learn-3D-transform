@@ -15,7 +15,7 @@ export function NavContextProvider(props: NavContextProviderProps) {
 
     function changePageName(name: string) {
         setPageName(name);
-        console.log(name);
+        document.title = `Animações 3D - ${name}`
     }
 
     return (
