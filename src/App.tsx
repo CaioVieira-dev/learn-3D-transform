@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Container>
-        <Header />
 
         <BrowserRouter>
+          <Header />
           <Switch>
             <Route exact path="/" component={Basics} />
             <Route exact path="/functions" component={FunctionsOverview} />
