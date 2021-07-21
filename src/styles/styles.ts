@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: hsl(252,20%,30%);
     display: flex;
     align-items: center;
