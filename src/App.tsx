@@ -7,20 +7,27 @@ import { FlipCard } from './pages/FlipCard'
 import { CubeSpin } from './pages/CubeSpin'
 import { BoxSpin } from './pages/BoxSpin'
 import { Carousel } from './pages/Carousel'
+
+import { Header } from './components/Header'
+import { Container } from './components/Container'
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Basics} />
-          <Route exact path="/functions" component={FunctionsOverview} />
-          <Route exact path="/animation/flip-card" component={FlipCard} />
-          <Route exact path="/animation/cube-spin" component={CubeSpin} />
-          <Route exact path="/animation/box-spin" component={BoxSpin} />
-          <Route exact path="/animation/carousel" component={Carousel} />
-        </Switch>
-      </BrowserRouter>
+      <Container>
+        <Header />
+
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Basics} />
+            <Route exact path="/functions" component={FunctionsOverview} />
+            <Route exact path="/animation/flip-card" component={FlipCard} />
+            <Route exact path="/animation/cube-spin" component={CubeSpin} />
+            <Route exact path="/animation/box-spin" component={BoxSpin} />
+            <Route exact path="/animation/carousel" component={Carousel} />
+          </Switch>
+        </BrowserRouter>
+      </Container>
     </div>
   );
 }
