@@ -1,4 +1,41 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+const spin = keyframes`
+0%{
+    transform: translateZ(-288px) rotateY(320deg);
+}
+11%{
+    transform: translateZ(-288px) rotateY(280deg);
+}
+22%{
+    transform: translateZ(-288px) rotateY(240deg);
+}
+33%{
+    transform:translateZ(-288px) rotateY(200deg) ;
+}
+44%{
+  
+    transform: translateZ(-288px) rotateY(160deg);
+}
+55%{
+  
+    transform: translateZ(-288px) rotateY(120deg);
+}
+66%{
+  
+    transform: translateZ(-288px) rotateY(80deg);
+}
+77%{
+    
+    transform:translateZ(-288px) rotateY(40deg) ;
+}
+88%{
+    transform:translateZ(-288px) rotateY(0deg) ;
+
+}
+
+
+`
 
 export const Scene = styled.div`
     width: 210px;
@@ -12,6 +49,7 @@ export const CarouselContainer = styled.div`
     position: absolute;
     transform-style: preserve-3d;
     transform: translateZ(-288px);
+    animation: ${spin} 7s ease-in-out alternate infinite;
 `
 const generateTransformRotation = (cellAmount: number) => {
     let styles = '';
