@@ -26,7 +26,7 @@ line-height: 2em;
 `
 export const Title = styled.h2`
 color:white;
-margin-top: 750px;
+margin-top: 70px;
 
 `
 
