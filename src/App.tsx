@@ -10,6 +10,7 @@ import { Carousel } from './pages/Carousel'
 
 import { Header } from './components/Header'
 import { Container } from './components/Container'
+import { Footer } from './components/Footer'
 
 import { NavContextProvider } from './contexts/NavContext'
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Route exact path="/animation/box-spin" component={BoxSpin} />
               <Route exact path="/animation/carousel" component={Carousel} />
             </Switch>
+            <Footer />
           </BrowserRouter>
         </NavContextProvider>
       </Container>
