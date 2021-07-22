@@ -8,9 +8,10 @@ const bgTitleBrightness = `25%`;
 export const StyledFooter = styled.footer`
 max-width: 500px;
 width:clamp(360px,100%,420px);
-
 text-align: center;
-cursor: pointer;
+position: relative;
+left:50%;
+transform: translateX(-50%);
 
 `
 

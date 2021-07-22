@@ -30,10 +30,10 @@ function App() {
               <Route exact path="/animation/box-spin" component={BoxSpin} />
               <Route exact path="/animation/carousel" component={Carousel} />
             </Switch>
-            <Footer />
           </BrowserRouter>
         </NavContextProvider>
       </Container>
+      <Footer />
     </div>
   );
 }
