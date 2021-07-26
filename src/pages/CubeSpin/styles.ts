@@ -136,4 +136,5 @@ margin-bottom:16px;
 export const Title = styled.h2`
 color:white;
 
+margin-top: 70px;
 `

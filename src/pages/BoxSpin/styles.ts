@@ -49,22 +49,22 @@ import styled, { keyframes } from "styled-components";
 
 const spin = keyframes`
 0%,100%{
-    transform: translateZ(-100px) rotateY(   0deg); 
+    transform: translateZ(-50px) rotateY(   0deg); 
 }
 16%{
-    transform: translateZ(-100px) rotateY( -90deg);
+    transform: translateZ(-50px) rotateY( -90deg);
 }
 32%{
-    transform: translateZ(-100px) rotateY(-180deg);
+    transform: translateZ(-50px) rotateY(-180deg);
 }
 48%{
-    transform: translateZ(-100px) rotateY(  90deg);
+    transform: translateZ(-50px) rotateY(  90deg);
 }
 64%{
-    transform: translateZ(-100px) rotateX( -90deg);
+    transform: translateZ(-50px) rotateX( -90deg);
 }
 80%{
-    transform: translateZ(-100px) rotateX(  90deg);
+    transform: translateZ(-50px) rotateX(  90deg);
 }
 
 `
@@ -125,5 +125,26 @@ line-height: 200px;
     background-color:palevioletred;
  }
 
+
+`
+export const Container = styled.div`
+max-width: 420px;
+display: flex;
+flex-direction:column;
+align-items: center;
+gap:30px;
+`
+
+export const Text = styled.p`
+color:white;
+font-size: 20px;
+line-height:1.5em;
+:last-child&{
+margin-bottom:16px;
+}
+`
+export const Title = styled.h2`
+color:white;
+margin-top: 70px;
 
 `
