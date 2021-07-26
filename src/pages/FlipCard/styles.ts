@@ -56,3 +56,24 @@ line-height: 300px;
 text-align: center;
 
 `
+export const Container = styled.div`
+max-width: 420px;
+display: flex;
+flex-direction:column;
+align-items: center;
+gap:30px;
+`
+
+export const Text = styled.p`
+color:white;
+font-size: 20px;
+line-height:1.5em;
+:last-child&{
+margin-bottom:16px;
+}
+`
+export const Title = styled.h2`
+color:white;
+margin-top: 70px;
+
+`
