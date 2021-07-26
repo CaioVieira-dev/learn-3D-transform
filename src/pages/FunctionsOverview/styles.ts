@@ -15,6 +15,9 @@ export const Text = styled.p`
 color:white;
 font-size: 20px;
 line-height:1.5em;
+:last-child&{
+margin-bottom:16px;
+}
 `
 export const Example = styled.p`
 color:white;

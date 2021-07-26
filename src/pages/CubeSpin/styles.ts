@@ -115,3 +115,25 @@ opacity: 0.7;
     transform: rotateY( 90deg) translateZ(100px);
 }
 `
+
+
+export const Container = styled.div`
+max-width: 420px;
+display: flex;
+flex-direction:column;
+align-items: center;
+gap:30px;
+`
+
+export const Text = styled.p`
+color:white;
+font-size: 20px;
+line-height:1.5em;
+:last-child&{
+margin-bottom:16px;
+}
+`
+export const Title = styled.h2`
+color:white;
+
+`
